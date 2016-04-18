@@ -66,3 +66,6 @@ D:\Projects\GoogleDriveMigration\GoogleDriveMigration\bin\Debug\System.Net.Http.
 D:\Projects\GoogleDriveMigration\GoogleDriveMigration\bin\Debug\Google.Apis.Drive.v2.dll
 D:\Projects\GoogleDriveMigration\GoogleDriveMigration\bin\Debug\Google.Apis.Drive.v2.pdb
 D:\Projects\GoogleDriveMigration\GoogleDriveMigration\bin\Debug\Google.Apis.Drive.v2.xml
+D:\Source\Repo\Google-Drive-Migration\GoogleDriveMigration\bin\Debug\GoogleDriveMigration.exe.config
+D:\Source\Repo\Google-Drive-Migration\GoogleDriveMigration\obj\Debug\GoogleDriveMigration.exe
+D:\Source\Repo\Google-Drive-Migration\GoogleDriveMigration\obj\Debug\GoogleDriveMigration.pdb

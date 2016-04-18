@@ -70,26 +70,6 @@ namespace DriveQuickstart
                 return false;
             }
         }
-
-        public static async Task<File> GetFile(string fileID)
-        {
-            using (var client = new HttpClient())
-            {
-                client.BaseAddress = new Uri("https://www.googleapis.com/drive/v3/files/fileId/" + fileID);
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-                // New code:
-                HttpResponseMessage response = await client.GetAsync(fileID);
-                if (response.IsSuccessStatusCode)
-                {
-                    File file= await response.Content.ReadAsAsync<File>();
-                    return file;
-                }
-                return null;
-            }
-
-        }
         
         static void Main(string[] args)
         {
