@@ -76,15 +76,13 @@ namespace DriveQuickstart
             UserCredential credential;
 
             string savePath = Environment.CurrentDirectory;
-            using (var stream =
-                new FileStream("client_secret.json", FileMode.Open, FileAccess.ReadWrite))
+            using (var stream = new FileStream("client_secret.json", FileMode.Open, FileAccess.ReadWrite))
             {
                 string credPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
 
                 credPath = Path.Combine(credPath, ".credentials/drive-dotnet-quickstart.json");
 
-                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    GoogleClientSecrets.Load(stream).Secrets,
+                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(GoogleClientSecrets.Load(stream).Secrets,
                     Scopes,
                     "user",
                     CancellationToken.None,
